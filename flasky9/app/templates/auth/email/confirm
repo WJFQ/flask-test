@@ -1,0 +1,9 @@
+你好 {{ user.username }}
+欢迎来到 396!
+为了确认你的新邮箱 请点击以下的链接
+{{ url_for('auth.confirm', token=token, _external=True) }}
+或者, 你可以复制下面的地址在浏览器地址栏里面使用:
+{{ url_for('auth.confirm', token=token, _external=True) }}
+最后,
+来自 396 官方服务器：
+须知: 邮件回应没有收到监控.
